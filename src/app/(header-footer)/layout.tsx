@@ -17,7 +17,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <StoreProvider>
       <html lang="en">
         <body className={`${inter.className} relative h-screen flex flex-col`}>
-          <Header />
+          {/* <Header /> */}
           <main className="flex-grow">
             {children}
           </main>
