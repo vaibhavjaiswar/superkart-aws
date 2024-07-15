@@ -1,0 +1,91 @@
+enum SubCategory {
+  'cameras' = 'cameras',
+  'fans' = 'fans',
+  'headphones' = 'headphones',
+  'iron-press' = 'iron-press',
+  'jeans' = 'jeans',
+  'laptops' = 'laptops',
+  'mixer-grinders' = 'mixer-grinders',
+  'mobiles' = 'mobiles',
+  'powerbanks' = 'powerbanks',
+  'projectors' = 'projectors',
+  'random' = 'random',
+  'shirts' = 'shirts',
+  'shoes' = 'shoes',
+  'spectacles' = 'spectacles',
+  't-shirts' = 't-shirts',
+  'wrist-watches' = 'wrist-watches',
+}
+
+enum SubCategoryLabel {
+  'Cameras' = 'Cameras',
+  'Fans' = 'Fans',
+  'Headphones' = 'Headphones',
+  'Iron Press' = 'Iron Press',
+  'Jeans' = 'Jeans',
+  'Laptops' = 'Laptops',
+  'Mixer Grinders' = 'Mixer Grinders',
+  'Mobiles' = 'Mobiles',
+  'Powerbanks' = 'Powerbanks',
+  'Projectors' = 'Projectors',
+  'Random' = 'Random',
+  'Shirts' = 'Shirts',
+  'Shoes' = 'Shoes',
+  'Spectacles' = 'Spectacles',
+  'T Shirts' = 'T Shirts',
+  'Wrist Watches' = 'Wrist Watches',
+}
+
+export type SubCategories = 'cameras' | 'fans' | 'headphones' | 'iron-press' | 'jeans' | 'laptops' | 'mixer-grinders' | 'mobiles' | 'powerbanks' | 'projectors' | 'random' | 'shirts' | 'shoes' | 'spectacles' | 't-shirts' | 'wrist-watches'
+
+export const SubCategoryMap = new Map<string, string>([
+  [SubCategory.cameras, SubCategoryLabel.Cameras],
+  [SubCategory.fans, SubCategoryLabel.Fans],
+  [SubCategory.headphones, SubCategoryLabel.Headphones],
+  [SubCategory["iron-press"], SubCategoryLabel["Iron Press"]],
+  [SubCategory.jeans, SubCategoryLabel.Jeans],
+  [SubCategory.laptops, SubCategoryLabel.Laptops],
+  [SubCategory["mixer-grinders"], SubCategoryLabel["Mixer Grinders"]],
+  [SubCategory.mobiles, SubCategoryLabel.Mobiles],
+  [SubCategory.powerbanks, SubCategoryLabel.Powerbanks],
+  [SubCategory.projectors, SubCategoryLabel.Projectors],
+  [SubCategory.random, SubCategoryLabel.Random],
+  [SubCategory.shirts, SubCategoryLabel.Shirts],
+  [SubCategory.shoes, SubCategoryLabel.Shoes],
+  [SubCategory.spectacles, SubCategoryLabel.Spectacles],
+  [SubCategory["t-shirts"], SubCategoryLabel["T Shirts"]],
+  [SubCategory["wrist-watches"], SubCategoryLabel["Wrist Watches"]],
+])
+
+export const subCategoryOptions = {
+  '': [
+    { label: 'Select category first!', value: '' },
+  ],
+  'electronics': [
+    { label: 'Select an option', value: '' },
+    { label: SubCategoryLabel.Cameras, value: SubCategory.cameras },
+    { label: SubCategoryLabel.Headphones, value: SubCategory.headphones },
+    { label: SubCategoryLabel.Laptops, value: SubCategory.laptops },
+    { label: SubCategoryLabel.Mobiles, value: SubCategory.mobiles },
+    { label: SubCategoryLabel.Powerbanks, value: SubCategory.powerbanks },
+    { label: SubCategoryLabel.Projectors, value: SubCategory.projectors },
+    { label: SubCategoryLabel.Random, value: SubCategory.random },
+  ],
+  'home-appliances': [
+    { label: 'Select an option', value: '' },
+    { label: SubCategoryLabel.Fans, value: SubCategory.fans },
+    { label: SubCategoryLabel["Iron Press"], value: SubCategory["iron-press"] },
+    { label: SubCategoryLabel["Mixer Grinders"], value: SubCategory["mixer-grinders"] },
+    { label: SubCategoryLabel.Random, value: SubCategory.random },
+  ],
+  'fashion': [
+    { label: 'Select an option', value: '' },
+    { label: SubCategoryLabel.Jeans, value: SubCategory.jeans },
+    { label: SubCategoryLabel.Shirts, value: SubCategory.shirts },
+    { label: SubCategoryLabel.Shoes, value: SubCategory.shoes },
+    { label: SubCategoryLabel.Spectacles, value: SubCategory.spectacles },
+    { label: SubCategoryLabel["T Shirts"], value: SubCategory["t-shirts"] },
+    { label: SubCategoryLabel["Wrist Watches"], value: SubCategory["wrist-watches"] },
+    { label: SubCategoryLabel.Random, value: SubCategory.random },
+  ],
+}

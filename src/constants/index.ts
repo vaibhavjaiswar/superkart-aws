@@ -1,0 +1,1 @@
+export const ImagePreSignedURLExpiryInterval = 604800 // max interval
